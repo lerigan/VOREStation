@@ -10,6 +10,11 @@
 	<link rel="stylesheet" type="text/css" href="vchat-font-embedded.css" />
 	<link rel="stylesheet" type="text/css" href="ss13styles.css" />
 
+	<!-- Pre script load safety inline script -->
+	<script type='text/javascript'>
+		function do_putmessage(messages) {if(typeof do_putmessage === "function") do_putmessage(messages); }
+	</script>
+
 	<!-- Important scripts -->
 	<script type="text/javascript" src="polyfills.js"></script>
 	<script type="text/javascript" src="vue.min.js"></script>

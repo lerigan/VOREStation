@@ -778,7 +778,7 @@ function byondDecode(message) {
 }
 
 //This is the function byond actually communicates with using byond's client << output() method.
-function putmessage(messages) {
+function do_putmessage(messages) {
 	messages = byondDecode(messages);
 	if (Array.isArray(messages)) {
 		messages.forEach(function(message) {
